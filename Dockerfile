@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY . /app
 RUN mkdir -p volumed && \
-    touch volumed/a.txt && \
-    echo "from container!" >> volumed/a.txt
+    touch volumed/a.txt
 
-CMD ["cat", "volumed/a.txt"]
+CMD ["./internal.sh"]
