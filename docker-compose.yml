@@ -5,7 +5,7 @@ services:
     build:
       context: .
     volumes:
-      - my_volume:/app/volumed
+      - my:/app/volumed
 
 volumes:
-  my_volume:
+  my:
